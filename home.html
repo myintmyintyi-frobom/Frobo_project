@@ -3,8 +3,9 @@
 <html>
 <head>
 <title> Frobom Myanmar Website</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
 <style>
-	html { 
+	 html { 
 		font-family: Arial; 
 	}
 	body {
@@ -46,10 +47,46 @@
 	.important { 
 		font-weight: bold; color: red; 
 	}
+	/* .ul.a.arrow {
+	    font-size:11px;
+	    line-height:0%;
+	}
+	.li:hover .sub-menu {
+	    z-index:1;
+	    opacity:1;
+	}
+	 
+	.sub-menu {
+	    width:160%;
+	    padding:5px 0px;
+	    position:absolute;
+	    top:100%;
+	    left:0px;
+	    z-index:-1;
+	    opacity:0;
+	    transition:opacity linear 0.15s;
+	    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+	    background:#2e2728;
+	}
+	.sub-menu li {
+	    display:block;
+	    font-size:16px;
+	}
+	 
+	.sub-menu li a {
+	    padding:10px 30px;
+	    display:block;
+	}
+	 
+	.sub-menu li a:hover, .sub-menu .current-item a {
+	    background:#3e3436;
+	} 
+	 */
 </style>
 
 </head>
 <body>
+<<<<<<< HEAD
 <h1>FROBOM MYANMAR CO.,LTD.</h1>
 	<nav>
 		<ul>
@@ -57,14 +94,36 @@
 			<li><a href="gallery.html">gallery</a></li>
 			<li><a href="staff.html">staff </a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="contanctus.html">Contact Us</a></li>
+
 		</ul>
 	</nav>
+=======
+	<h1>FROBOM MYANMAR CO.,LTD.</h1>
+	<div class="menu-wrapp">
+		<nav class="menu">
+			<ul class="clearfix">
+				<li><a href="home.html">home</a></li>
+				<li><a href="gallery.html">gallery</a></li>
+				<li><a href="staff.html">staff List <span class="arrow">&#9660;</span></a>
+					<!-- <ul class="sub-menu">
+					            					<li><a href="#">Admin Team</a></li>
+					            					<li><a href="#">PHP Team</a></li>
+					           				 	<li><a href="#">Java Team</a></li>
+					            					<li><a href="#">Unity Team</a></li>
+					        					</ul> -->
+				</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+>>>>>>> a633fc25fe18af2dedc7633b17bef9872ec556a1
 	<section id=”content”> 
 		
 		<div>
 			<h2>WELCOME TO FROBO MYANMAR!</h2>
-			<img src="company.jpg">
+			<img src="company.jpg"  class="img-responsive">
 		</div>
 		<div>
 			<small>Yangon,Kamayut township, Heldan</small>
