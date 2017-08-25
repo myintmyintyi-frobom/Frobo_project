@@ -47,6 +47,33 @@
 	.important { 
 		font-weight: bold; color: red; 
 	}
+	.dropdown {
+   		 position: relative;
+    		display: inline-block;
+	}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    max-width: 130px;
+    box-shadow: 5px 8px 10px 10px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.sub-menu a {
+    color: black;
+    padding: 1px 1px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-menu a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
 	/* .ul.a.arrow {
 	    font-size:11px;
 	    line-height:0%;
@@ -92,14 +119,16 @@
 			<ul class="clearfix">
 				<li><a href="home.html">home</a></li>
 				<li><a href="gallery.html">gallery</a></li>
-				<li><a href="staff.html">staff List <span class="arrow">&#9660;</span></a>
-					<!-- <ul class="sub-menu">
-					            					<li><a href="#">Admin Team</a></li>
-					            					<li><a href="#">PHP Team</a></li>
-					           				 	<li><a href="#">Java Team</a></li>
-					            					<li><a href="#">Unity Team</a></li>
-					        					</ul> -->
+				<div class="dropdown">
+				<li><a href="staff.html">staff List <span class="arrow">&#9660;</span></a> 
+					<ul class="sub-menu">
+					     <li><a href="#">Admin Team</a></li>
+					      <li><a href="#">PHP Team</a></li>
+					      <li><a href="#">Java Team</a></li>
+					        <li><a href="#">Unity Team</a></li>
+					        					</ul> 
 				</li>
+				</div>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
